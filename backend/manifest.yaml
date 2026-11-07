@@ -33,7 +33,7 @@ spec:
       - name: backend
         image: ganeshguntamadugu/backend:v1
         envFrom:
-          - ConfigMapRef:
+          - configMapRef:
               name: expense-backend
 ---
 apiVersion: v1
