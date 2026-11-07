@@ -12,8 +12,8 @@ spec:
   selector:
     matchLabels: # There labels are used to select the Pod and create replicas
       project: expense
-    enviroment: dev
-    module: mysql
+      enviroment: dev
+      module: mysql
 # This is Pod definition
   template:
     metadata:
