@@ -4,7 +4,7 @@ metadata:
   name: expense-backend
   namespace: expense
 data:
-  DB_HOST: expense-mysql
+  DB_HOST: mysql
 ---
 apiVersion: apps/v1
 kind: Deployment

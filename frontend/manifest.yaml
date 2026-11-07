@@ -29,7 +29,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: expense-frontend
+  name: frontend
   namespace: expense
 spec:
   type: LoadBalancer
