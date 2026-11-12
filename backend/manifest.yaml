@@ -11,7 +11,7 @@ kind: Deployment
 metadata:
   name: expense-backend
   namespace: expense
-  labels:    # These are ReplicaSet labels
+  labels:    # These are Deployment labels
     project: expense
     enviroment: dev
     module: backend
