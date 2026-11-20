@@ -27,8 +27,8 @@ spec:
         image: ganeshguntamadugu/frontend:v1
       resources:
         requests:
-            cpu: "100m"
-            memory: "120Mi"
+          cpu: "100m"
+          memory: "120Mi"
         limits:
           cpu: "150m"
           memory: "160Mi"
@@ -54,6 +54,7 @@ apiVersion: autoscaling/v1
 kind: HorizontalPodAutoscaler
 metadata:
   name: expense-frontend-hpa
+  namespace: expense
 spec:
   scaleTargetRef:
     apiVersion: apps/v1

@@ -65,6 +65,7 @@ apiVersion: autoscaling/v1
 kind: HorizontalPodAutoscaler
 metadata:
   name: expense-backend-hpa
+  namespace: expense
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
