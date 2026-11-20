@@ -16,7 +16,7 @@ metadata:
     enviroment: dev
     module: backend
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels: # There labels are used to select the Pod and create replicas
       project: expense

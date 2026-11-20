@@ -8,7 +8,7 @@ metadata:
     enviroment: dev
     module: frontend
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels: # There labels are used to select the Pod and create replicas
       project: expense
@@ -49,4 +49,17 @@ spec:
       protocol: TCP
       port: 80
       targetPort: 80
+---
+apiVersion: autoscaling/v1
+kind: HorizontalPodAutoscaler
+metadata:
+  name: expense-frontend-hpa
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: expense-frontend
+  minReplicas: 1
+  maxReplicas: 10
+  targetCPUUtilizationPercentage: 15
 
