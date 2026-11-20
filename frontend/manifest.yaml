@@ -25,13 +25,13 @@ spec:
       containers:
       - name: frontend
         image: ganeshguntamadugu/frontend:v1
-      resources:
-        requests:
-          cpu: "100m"
-          memory: "120Mi"
-        limits:
-          cpu: "150m"
-          memory: "160Mi"
+        resources:
+          requests:
+            cpu: "100m"
+            memory: "120Mi"
+          limits:
+            cpu: "150m"
+            memory: "160Mi"
 ---
 apiVersion: v1
 kind: Service
