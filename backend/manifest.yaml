@@ -61,10 +61,10 @@ spec:
       port: 8080
       targetPort: 8080
 ---
-apiVersion: autoscaling/v2
+apiVersion: autoscaling/v1
 kind: HorizontalPodAutoscaler
 metadata:
-  name: web-app-hpa
+  name: expense-backend-hpa
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
